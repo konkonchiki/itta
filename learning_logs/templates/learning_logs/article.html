@@ -1,0 +1,32 @@
+{% extends "learning_logs/template.html" %}
+{% block content %}
+  <header class="entry-header">
+   <div class="time">
+    <time class="concertone">{{ post.create_at }}</time>
+   </div>
+   <h1 class="text-bold " id="article_title">{{ post.title }}</h1>
+  </header>
+  <section class="entry-content">
+   <div class="" id="article">
+    {{ post.text | safe}}
+   </div>
+  </section>
+<section>
+ <div class="main-title">
+  <h3>関連する記事</h3>
+ </div>
+ <div class="related">
+  {% for relation_post in post.relation_posts.all %}
+  <ul>
+   <li>
+    <article>
+     <div class="card">
+      <a href="{% url 'learning_logs:article' relation_post.id %}">{{ relation_post }}</a>
+     </div>
+    </article>
+   </li>
+  </ul>
+  {% endfor %}
+ </div>
+</section>
+{% endblock content %}

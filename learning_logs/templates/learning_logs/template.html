@@ -1,0 +1,57 @@
+{% load static %}
+{% load bootstrap4 %}
+<!doctype html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<!--最小限のビューポート設定-->
+<meta name="viewport" content="width=device-width">
+ <link rel="stylesheet" href="{% static 'learning_logs/style.css' %}">
+ <title>教員のためのプログラミング</title>
+ {% bootstrap_css %}
+ {% bootstrap_javascript jquery='full' %}
+</head>
+<body>
+ <!-- ページヘッダー（ナビゲーションアイテム） -->
+ <header class="header">
+  <div class="navBox">
+   <div class="logo-image">
+    <div class="header-logo" id="lg">
+     <h1 class="" id="itta">
+      <a href="{% url 'learning_logs:index'%}">
+       <span class="i">i</span>
+       <span class="t-1">T</span>
+       <span class="t-2">T</span>
+       <span class="a">a</span>
+      </a>
+     </h1>
+     <p class="" id="it">ITを使いこなそう</p>
+    </div>
+   </div>
+  </div>
+ </header>
+ <main>
+  <section id="blog">
+   <!--ページヘッダー（タイトルとか）-->
+   <article id="page-header">
+    <header class="page-header">
+     <div class="anime">
+      <div class="page-title">
+       <em class="concertone">BLOG</em>
+       <div class="font-weight-bold">プログラミング的な何か。ときどき科学を。</div>
+      </div>
+     </div>
+    </header>    
+   </article>
+   <!--- ボディの部分 -->>
+   <div id="single" class="content-block">
+    <div class="inner">
+     {% block content %}{% endblock content %}
+    </div>
+   </div>
+  </section>
+ </main>
+</body>
+
+

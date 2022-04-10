@@ -1,0 +1,175 @@
+/*---- ヘッダー部分 ------ */
+* {
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html,body,section,article,header,
+div ,header,li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.header {
+   padding: 0 20px;
+   top: 20px;
+   position: fixed; 
+   left: 0;
+   right: 0;
+   width: 100%;
+   z-index: 5;
+}
+.header .navBox{
+    width: 96%;
+    height: 90px;
+    margin: 0 auto 0 auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+/*---- ヘッダーの左側 ------ */
+.header .navBox .logo-image p {
+    line-height: 1rem;
+    font-weight: 700;
+}
+#lg a {
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: -0.13rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#itta #it{
+    margin-bottom: -5rem;
+}
+/*---- ヘッダーの右側 ------ */
+.header .navBox .accBox{
+    margin: 0 0 0 auto;
+}
+.header .navBox .globalArea{
+    display: flex !important;
+    align-items: center;
+}
+.header .navBox .gnav{
+    margin-right: 0;
+}
+.navBox .gnav ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.navBox .gnav ul li{
+    list-style: none;
+}
+.navBox .gnav ul a{
+    vertical-align: baseline;
+    background: transparent;
+}
+.header .navBox .gnav ul {
+    list-style-type: disc;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+/*---- ヘッダ　タイトル ------ */
+#page-header .page-header {
+    background: #e94829;
+    padding: 7.5rem 0 4rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+.page-title em {
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    line-height: 1;
+}
+.concertone {
+    font-family: 'Concert One' , sans-serif;
+    font-weight: 400!important;
+}
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0,0,0,0.8);
+    position: relative;
+    min-height: 100vh;
+    font-family:  "ヒラギノ角ゴ ProN W3", 
+    HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, 
+    Verdana, Helvetica, Arial, sans-serif;
+}
+
+/* -------- トップページ部分 (記事の集合) ----------- */
+#single {
+    background: #f1f1f1;
+}
+#single .inner {
+    padding: 0 1.5rem;
+}
+.inner {
+    padding: 0 2rem;
+    margin: 0 auto;
+    position: relative;
+}
+.entry-header {
+    background: #FFF;
+    border-radius: 10px 10px 0 0;
+}
+.entry-content{
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+#single .entry-content{
+    margin: 0 -15px 0 -15px;
+    padding: 10px 20px 20px;
+}
+.content-block {
+    padding: 4rem 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.text-bold {
+    font-weight: bold;
+}
+.dateTime {
+    color: 255 255 255 0.5;
+}
+.fl li {
+    display: inline;
+}
+
+/* -------- 関連記事のセクション ----------- */
+.main-title {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.related{
+    background: #FFF;
+    border-radius: 4px;
+    margin: 1rem 0 2.5rem;
+    padding: 15px;
+    font-size: .83rem;
+}
+.card{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #DDD;
+}
