@@ -10,7 +10,7 @@
         <a href="{% url 'learning_logs:article' title.id %}">
           <h2 class="text-bold ">{{ title }}</h2>
         </a>
-        <p class="dateTime">{{ title.create_at }}</p>
+        <span class="dateTime">{{ title.create_at }}</span>
         {% for tag in title.tags.all %}
         <ul>
           <div class="">
