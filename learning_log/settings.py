@@ -25,7 +25,7 @@ SECRET_KEY = '9zsz3f_4@v)0o-pp97p_iqa629fr^4*$$gmh1ch-jlngs#4u6='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -131,5 +131,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
 #Herokuの設定
-import django_heroku
-django_heroku.settings(locals())
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)

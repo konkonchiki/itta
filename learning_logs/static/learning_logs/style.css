@@ -115,6 +115,19 @@ body {
 }
 
 /* -------- トップページ部分 (記事の集合) ----------- */
+.topic-all {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.topic-all .pd {
+    margin: 0; 
+    padding: 0;
+}
 #single {
     background: #f1f1f1;
 }
